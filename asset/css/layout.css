@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/******************* HTML ELEMENTS *******************/
+
+span,
+button,
+label,
+select {
+    display: block;
+}
+
+input,
+button {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/******************* LAYOUT *******************/
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+.row::before,
+.row::after,
+.row-begin,
+.row-end {
+    display: table;
+    content: ' ';
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+
+.row-layout-mainsection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.auto {
+    width: auto;
+}
+
+.inherit-wh {
+    height: inherit;
+    width: inherit;
+}
+
+.inherit-mp {
+    margin: inherit;
+    padding: inherit;
+}
+
+
+/******************* Dynamic grid *********************/
+
+.dyn-grid {
+    width: calc(100% / 1);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .dyn-grid {
+        width: calc(100% / 2);
+    }
+    .dyn-grid:nth-child(2n + 3) {
+        display: table;
+        content: ' ';
+        clear: both;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dyn-grid {
+        width: calc(100% / 3);
+    }
+    .dyn-grid:nth-child(3n + 4) {
+        display: table;
+        content: ' ';
+        clear: both;
+    }
+}

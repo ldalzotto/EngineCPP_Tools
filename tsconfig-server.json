@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./asset/generated/server",
+    "watch": true,
+    "sourceMap": true
+  },
+  "include": ["./src/server/**/**.*"],
+  "exclude": ["./asset/generated"]
+}

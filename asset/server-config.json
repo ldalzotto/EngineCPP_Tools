@@ -1,0 +1,22 @@
+{
+  "client": {
+    "root_folder": "E:/GameProjects/GameEngineLinux_Editor/asset"
+  },
+  "engine": {
+    "root_folder": "E:/GameProjects/GameEngineLinux",
+    "build_folder": "E:/GameProjects/GameEngineLinux/build"
+  },
+  "app_test": {
+    "modules": [
+      "Common2Test",
+      "Math2Test",
+      "WindowTest",
+      "CollisionTest",
+      "RenderTest",
+      "Scene2Test",
+      "GPUTest",
+      "Scene2MiddlewareTest",
+      "Sandbox"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./asset/generated/client",
+    "sourceMap": true,
+    "watch": true,
+    "module": "ES2020"
+  },
+  "include": [
+    "./src/client/**/**.*",
+    "./src/common/**/**.*"
+  ]
+}
